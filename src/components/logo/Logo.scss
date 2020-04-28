@@ -1,0 +1,14 @@
+.logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 4px 9px;
+  border: 1.2px solid white;
+  margin-right: 45%;
+}
+
+@media screen and (max-width: 1030px) {
+  .logo {
+    margin-right: 20%;
+  }
+}

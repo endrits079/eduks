@@ -1,0 +1,20 @@
+.single-nav-item a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 19px;
+  font-size: 0.8rem;
+}
+
+.single-nav-item a.active,
+.single-nav-item a:hover,
+.single-nav-item a:active {
+  background-color: rgb(20, 114, 207);
+}
+
+@media screen and (max-width: 768px) {
+  .single-nav-item a {
+    font-size: 1rem;
+  }
+}

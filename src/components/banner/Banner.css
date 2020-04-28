@@ -1,0 +1,51 @@
+.banner {
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img//banner/banner.jpg") center/cover fixed no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 15.5px;
+}
+
+.banner .divider {
+  height: 3px;
+  background-color: rgb(11, 164, 235);
+  width: 30%;
+  margin: 7px 0;
+}
+
+.banner h3 {
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  letter-spacing: 7px;
+}
+
+.banner a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(10, 50, 90);
+  padding: 12px 18px;
+  border-radius: 25px;
+  width: 10%;
+  text-align: center;
+  margin-top: 48px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1024px) {
+  .banner .divider {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .banner .divider {
+    width: 70%;
+  }
+}

@@ -1,0 +1,34 @@
+.nav ul,
+.nav-mobile ul {
+  list-style: none;
+}
+
+.nav ul .single-nav-item {
+  display: inline-block;
+}
+.nav-mobile {
+  display: none;
+  transition: all 0.4s linear;
+  width: 100%;
+  background-color: rgb(10, 50, 90);
+}
+.nav-mobile ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    transform: translateY(-200px);
+  }
+}
