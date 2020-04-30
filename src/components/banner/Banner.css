@@ -33,14 +33,27 @@
   background-color: rgb(10, 50, 90);
   padding: 12px 18px;
   border-radius: 25px;
-  width: 10%;
+  width: 150px;
   text-align: center;
   margin-top: 48px;
   font-size: 1.2rem;
+  transition: all 0.4s linear;
+}
+.banner a:hover {
+  transform: translateY(-5px);
+  background-color: white;
+  border: 2px solid rgb(10, 50, 90);
+  color: rgb(10, 50, 90);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 1024px) {
   .banner .divider {
     width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    background-attachment: unset;
   }
 }
 

@@ -4,9 +4,15 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
+import { createStore, combineReducers } from "redux";
+import { Provider } from "react-redux";
+import reducer from "./store/reducers/modal";
+const store = createStore(reducer);
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>,
   document.getElementById("root")
 );
